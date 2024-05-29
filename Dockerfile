@@ -49,6 +49,8 @@ USER root
 # Install and execute
 COPY  . /freqtrade/
 
+ENV PATH=/root/.local/bin:$PATH
+
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && freqtrade install-ui \
   && mkdir -p /freqtrade/storage
