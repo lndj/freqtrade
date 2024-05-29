@@ -43,7 +43,7 @@ FROM base as runtime-image
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 ENV LD_LIBRARY_PATH /usr/local/lib
 
-COPY --from=python-deps /home/freqtrade/.local /root/.local
+COPY --from=python-deps /home/ftuser/.local /root/.local
 
 USER root
 # Install and execute
