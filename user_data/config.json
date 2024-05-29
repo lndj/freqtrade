@@ -70,7 +70,7 @@
         "chat_id": "5103216944"
     },
     "api_server": {
-        "enabled": false,
+        "enabled": true,
         "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
         "verbosity": "error",
