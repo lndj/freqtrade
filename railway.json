@@ -1,0 +1,9 @@
+{
+    "$schema": "https://railway.app/railway.schema.json",
+    "build": {
+      "builder": "DOCKERFILE"
+    },
+    "deploy": {
+      "startCommand": "trade --logfile /freqtrade/user_data/logs/freqtrade.log --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite --config /freqtrade/user_data/config.jso --strategy Strategy005"
+    }
+  }
