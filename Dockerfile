@@ -52,8 +52,6 @@ COPY --chown=ftuser:ftuser . /freqtrade/
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && freqtrade install-ui
 
-ADD ./user_data /freqtrade/user_data/
-
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]
