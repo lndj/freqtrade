@@ -4,6 +4,6 @@
       "builder": "DOCKERFILE"
     },
     "deploy": {
-      "startCommand": "freqtrade trade --logfile /freqtrade/storage/freqtrade.log --db-url sqlite:////freqtrade/storage/tradesv3.sqlite --config /freqtrade/user_data/config.json --strategy Strategy005"
+      "startCommand": "chown -R ftuser:ftuser /freqtrade/storage && freqtrade trade --logfile /freqtrade/storage/freqtrade.log --db-url sqlite:////freqtrade/storage/tradesv3.sqlite --config /freqtrade/user_data/config.json --strategy Strategy005"
     }
   }
