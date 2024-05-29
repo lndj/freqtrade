@@ -29,9 +29,6 @@
         "order_book_top": 1
     },
     "exchange": {
-        "name": "kraken",
-        "key": "",
-        "secret": "",
         "ccxt_config": {},
         "ccxt_async_config": {
         },
@@ -65,19 +62,14 @@
         {"method": "StaticPairList"}
     ],
     "telegram": {
-        "enabled": true,
-        "token": "6166588816:AAHFE_6w991_EcMahznb8MJnU4KuOgfTbsw",
-        "chat_id": "5103216944"
+        "enabled": true
     },
     "api_server": {
         "enabled": true,
         "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
         "verbosity": "error",
-        "jwt_secret_key": "xxoo123321",
-        "CORS_origins": [],
-        "username": "admin",
-        "password": "xxoo123321"
+        "CORS_origins": []
     },
     "bot_name": "freqtrade",
     "initial_state": "running",
