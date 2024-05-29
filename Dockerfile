@@ -51,7 +51,7 @@ COPY --chown=ftuser:ftuser . /freqtrade/
 
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && freqtrade install-ui \
-  && mkdir -p /freqtrade/storage 
+  && mkdir -p /freqtrade/storage && chown -R ftuser:ftuser /freqtrade/storage
 
 
 ENTRYPOINT ["freqtrade"]
